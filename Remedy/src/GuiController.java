@@ -15,20 +15,10 @@ import javafx.scene.control.Label;
  *
  * @author user
  */
-public class GuiController implements Initializable {
-    
-    @FXML
-    private Label label;
-    
-    @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
-    }
-    
+public class GuiController implements Initializable {    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+
     }    
     
 }
