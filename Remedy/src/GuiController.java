@@ -25,7 +25,7 @@ public class GuiController implements Initializable {
     @FXML
     TextField descriptionTextField; 
     @FXML
-    ListView eventList;
+    ListView<String> eventList;
     
     
 }
