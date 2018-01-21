@@ -1,6 +1,8 @@
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
@@ -28,6 +30,9 @@ public class GuiController implements Initializable {
     TextField descriptionTextField; 
     @FXML
     ListView<LocalEvent> eventList;
+    
+    //in order to populate the event list observable
+    ObservableList<LocalEvent> list = FXCollections.observableArrayList();
     
     @FXML
     private void addEvent(Event e){
