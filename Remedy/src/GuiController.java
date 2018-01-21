@@ -36,7 +36,9 @@ public class GuiController implements Initializable {
     
     @FXML
     private void addEvent(Event e){
-        
+        //populate the list first
+        list.add(new LocalEvent(datePicker.getValue(), descriptionTextField.getText()));
+        eventList.setItems(list);
     };
     
 }
