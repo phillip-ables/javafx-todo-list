@@ -37,5 +37,9 @@ public class LocalEvent {
         this.date = date;
     }
     
+    public LocalEvent(LocalDate date, String description){        
+        this.setDate(date);
+        this.setDescription(description);
+    }
     
 }
