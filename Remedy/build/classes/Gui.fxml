@@ -12,7 +12,7 @@
    <items>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="735.0">
          <children>
-            <Button fx:id="addButton" layoutX="3.0" layoutY="5.0" mnemonicParsing="false" text="Add Event" />
+            <Button fx:id="addButton" layoutX="3.0" layoutY="5.0" mnemonicParsing="false" onAction="#addEvent" text="Add Event" />
             <DatePicker fx:id="datePicker" layoutX="91.0" layoutY="5.0" prefHeight="25.0" prefWidth="146.0" />
             <TextField fx:id="descriptionTextField" layoutX="252.0" layoutY="5.0" prefHeight="25.0" prefWidth="479.0" promptText="Add Event Description..." />
             <Separator layoutX="243.0" layoutY="-4.0" orientation="VERTICAL" prefHeight="42.0" prefWidth="6.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="243.0" AnchorPane.topAnchor="-4.0" />

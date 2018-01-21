@@ -36,10 +36,16 @@ public class LocalEvent {
     public void setDate(LocalDate date) {
         this.date = date;
     }
-    
+
     public LocalEvent(LocalDate date, String description){        
         this.setDate(date);
         this.setDescription(description);
     }
-    
+
+    //Local Event calls the toString method which we didnt override
+    public String toString(){
+        //return "At:" + this.getDate() + " " + this.getDescription();
+        //I like better
+        return this.getDate() + " " + this.getDescription();
+    }
 }
