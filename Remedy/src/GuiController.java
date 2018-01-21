@@ -41,4 +41,9 @@ public class GuiController implements Initializable {
         eventList.setItems(list);
     };
     
+    private void refresh(){
+        datePicker.setValue(LocalDate.now());
+        descriptionTextField.setText(null);
+    }
+    
 }
