@@ -1,6 +1,8 @@
 import java.net.URL;
+import java.time.LocalDate;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -16,7 +18,7 @@ import javafx.scene.control.TextField;
 public class GuiController implements Initializable {    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-
+        datePicker.setValue(LocalDate.now());
     }
     @FXML
     Button addButton;
@@ -25,7 +27,11 @@ public class GuiController implements Initializable {
     @FXML
     TextField descriptionTextField; 
     @FXML
-    ListView<String> eventList;
+    ListView<LocalEvent> eventList;
     
+    @FXML
+    private void addEvent(Event e){
+        
+    };
     
 }
